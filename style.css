@@ -24,8 +24,6 @@
   text-transform: capitalize;
 }
 
-
-
 html::-webkit-scrollbar {
   width: 1rem;
 }
@@ -149,7 +147,6 @@ section {
   float: left;
   width: 33.33%;
 }
-
 
 .banner {
   width: 100%;
@@ -1078,37 +1075,35 @@ tr:nth-child(even) {
 
 /* media queries  */
 
+#menu-btn {
+  display: inline-block;
+  transition: 0.2s linear;
+}
 
-  #menu-btn {
-    display: inline-block;
-    transition: 0.2s linear;
-  }
+#menu-btn.fa-times {
+  transform: rotate(180deg);
+}
 
-  #menu-btn.fa-times {
-    transform: rotate(180deg);
-  }
+.header .navbar {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  border-top: var(--border);
+  padding: 2rem;
+  transition: 0.2s linear;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
 
-  .header .navbar {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    background-color: var(--white);
-    border-top: var(--border);
-    padding: 2rem;
-    transition: 0.2s linear;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
+.header .navbar.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
 
-  .header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .header .navbar a {
-    display: block;
-    margin: 2rem;
-    text-align: center;
-  }
+.header .navbar a {
+  display: block;
+  margin: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 450px) {
@@ -1120,51 +1115,3 @@ tr:nth-child(even) {
     font-size: 3.5rem;
   }
 }
-/* 
-.footer {
-  background: url(../images/footer-bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.footer .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 3rem;
-}
-
-.footer .box-container .box h3 {
-  color: var(--white);
-  font-size: 2.5rem;
-  padding-bottom: 2rem;
-}
-
-.footer .box-container .box a {
-  color: var(--light-white);
-  font-size: 1.5rem;
-  padding-bottom: 1.5rem;
-  display: block;
-}
-
-.footer .box-container .box a i {
-  color: var(--main-color);
-  padding-right: 0.5rem;
-  transition: 0.2s linear;
-}
-
-.footer .box-container .box a:hover i {
-  padding-right: 2rem;
-}
-
-.footer .credit {
-  text-align: center;
-  padding-top: 3rem;
-  margin-top: 3rem;
-  border-top: 0.1rem solid var(--light-white);
-  font-size: 2rem;
-  color: var(--white);
-}
-
-.footer .credit span {
-  color: var(--main-color);
-} */

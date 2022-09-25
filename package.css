@@ -1,4 +1,4 @@
-html {
+.packages {
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -10,7 +10,7 @@ html {
 }
 
 @media (max-width: 991px) {
-  html {
+  .packages {
     font-size: 55%;
   }
 
