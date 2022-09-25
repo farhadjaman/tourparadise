@@ -1115,3 +1115,52 @@ tr:nth-child(even) {
     font-size: 3.5rem;
   }
 }
+@media (max-width:767px)
+   {
+    .third{
+        opacity: 0;
+    }
+    
+    .fc-gallery{
+        display:none;
+    }
+    
+    .item-content img{
+        max-width: auto;
+        height: 250px;
+        
+    
+    }
+    .item-content, .about-1-left{
+        margin: 16px;
+        height: 100%;
+        position: relative;
+    }
+    .item-content a, .about-1-left a{
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        background: #254160;
+        color: white;
+        text-decoration: none;
+        padding: 4px 14px;
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 1rem;
+       
+    }
+    .product-item img{
+        text-align: center;
+        position: relative;
+        border: 2px solid rgb(240, 240, 240);
+        width: 80%;
+        
+    
+    }
+    .left-banner-2 img{
+        width: 90%;
+
+    }
+    .subscribe-tog{
+        flex-direction: column;
+    }
+   }
